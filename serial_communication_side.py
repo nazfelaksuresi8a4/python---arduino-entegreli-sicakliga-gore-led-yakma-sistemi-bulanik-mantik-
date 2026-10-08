@@ -1,10 +1,10 @@
 import serial 
 import time as t 
-import gdgad
+import fuzzy_logic_side
 
 class Main:
     def __init__(self):
-        self.dimension_class = gdgad.DimensionFLow()
+        self.dimension_class = fuzzy_logic_side.DimensionFLow()
 
         self.board = serial.Serial(port='COM7',
                             baudrate=9600)
